@@ -42,6 +42,8 @@ void kakaoLogin() async{
 
     // 4. 시큐어 스토리지에 저장
     secureStorage.write(key: blogAccessToken, value: blogAccessToken);
+
+    // 5. static, const 변수, riverpod 상태관리(생략)
   } catch (error) {
     print('카카오톡으로 로그인 실패 $error');
   }
